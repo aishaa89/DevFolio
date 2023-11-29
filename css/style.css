@@ -1,0 +1,381 @@
+
+body{
+  background-color: #F5F5F5;
+}
+:root{
+    --primary-color:white;
+    --info-color:#0078FF;
+
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+/* ==============Start Style Code of header Section================== */
+
+header{
+    background-image: url(../images/hero-bg.jpg );
+    background-position: center center;
+    background-size: cover;
+
+}
+.header-text{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, .7);
+}
+.header-text h1{
+    font-size: 72px;
+}
+.header-text span{
+    font-size: 40px;
+    font-weight: 600;
+}
+header  p::after{
+   content: "|";
+   animation-name: typing;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0%{content: "D|";}
+  1%{content: "De|";}
+  2%{content: "Des|";}
+  3%{content: "Desi|";}
+  4%{content: "Desig|";}
+  5%{content: "Design|";}
+  6%{content: "Designe|";}
+  7%{content: "Designer|";}
+  8%{content: "Designer |";}
+  9%{content: "Designer|";}
+  10%{content: "Designer|";}
+  11%{content: "Designer|";}
+  12%{content: "Designe|";}
+  13%{content: "Design|";}
+  14%{content: "Desig|";}
+  15%{content: "Desi|";}
+  16%{content: "Des|";}
+  17%{content: "De|";}
+  18%{content: "De|";}
+  19%{content: "Dev|";}
+  20%{content: "Deve|";}
+  21%{content: "Devel|";}
+  22%{content: "Develo|";}
+  23%{content: "Develop|";}
+  24%{content: "Develope|";}
+  25%{content: "Developer|";}
+  26%{content: "Developer |";}
+  27%{content: "Developer|";}
+  28%{content: "Developer|";}
+  29%{content: "Developer|";}
+  30%{content: "Develope|";}
+  31%{content: "Develop|";}
+  32%{content: "Develo|";}
+  33%{content: "Devel|";}
+  34%{content: "Deve|";}
+  35%{content: "Dev|";}
+  36%{content: "De|";}
+  37%{content: "D|";}
+  38%{content: "|";}
+  39%{content: "p|";}
+  40%{content: "ph|";}
+  41%{content: "pho|";}
+  42%{content: "phot|";}
+  43%{content: "photo|";}
+  44%{content: "photog|";}
+  45%{content: "photogr|";}
+  46%{content: "photogra|";}
+  47%{content: "photograp|";}
+  48%{content: "photograph|";}
+  49%{content: "photographe|";}
+  50%{content: "photographer|";}
+  51%{content: "photographer |";}
+  52%{content: "photographer|";}
+  53%{content: "photographer|";}
+  54%{content: "photographer|";}
+  55%{content: "photographe|";}
+  56%{content: "photograph|";}
+  57%{content: "photograp|";}
+  58%{content: "photogra|";}
+  59%{content: "photogr|";}
+  60%{content: "photog|";}
+  61%{content: "photo|";}
+  62%{content: "phot|";}
+  63%{content: "pho|";}
+  64%{content: "ph|";}
+  65%{content: "p|";}
+  66%{content: "|";}
+  67%{content: "F|";}
+  68%{content: "Fr|";}
+  69%{content: "Fre|";}
+  70%{content: "Free|";}
+  71%{content: "Freel|";}
+  72%{content: "Freela|";}
+  73%{content: "Freelan|";}
+  74%{content: "Freelanc|";}
+  75%{content: "Freelance|";}
+  76%{content: "Freelancer|";}
+  77%{content: "Freelancer |";}
+  78%{content: "Freelancer|";}
+  79%{content: "Freelancer|";}
+  80%{content: "Freelancer|";}
+  81%{content: "Freelance|";}
+  82%{content: "Freelanc|";}
+  83%{content: "Freelan|";}
+  84%{content: "Freela|";}
+  85%{content: "Freel|";}
+  86%{content: "Free|";}
+  87%{content: "Fre|";}
+  88%{content: "Fr|";}
+  89%{content: "F|";}
+  90%{content: "|";}
+
+}
+
+/* Developer Designer Freelancer Photographer */
+/* ==============End Style Code of header Section================== */
+
+
+/* ==============Start Style Code of Navbar Section================== */
+  .navbar .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .navbar a:not(.dropdown-menu a){
+    color: var(--primary-color);
+  }
+  .navbar ul li a{
+      position: relative;
+  }
+  .navbar ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color:var(--primary-color) ;
+    left: 8px;
+    bottom: -3px;
+    transition: width 1s;
+  }
+  .navbar ul li a:hover{
+    color: var(--primary-color);
+  }
+  .navbar ul li a:hover::before{
+    width: 70%;
+  }
+  #newDrop{
+    display: none;
+  }
+  .navbar #deep:hover #newDrop{
+    display: block;
+  }
+  body:has(.portofolio:target) .work-link::before,
+  body:has(.blog:target) .blog-link::before,
+  body:has(.contact:target) .contact-link::before,
+  body:has(.services:target) .service-link::before,
+  body:has(.about:target) .about-link::before,
+  body:has(header:target) .home-link::before{
+    width: 70%;
+  }
+
+
+  /* ==========About Section ====================== */
+
+  .about h5::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color:var(--info-color) ;
+    left: 0px;
+    bottom: -10px;
+  }
+  .about .container{
+    background-color: #FFFFFF;
+  }
+
+
+  /* ==========Services Section ====================== */
+ .services .service-title p::before{
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 3px;
+    background-color:var(--info-color) ;
+    left:50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+  } 
+
+  .services .service-content{
+    background-color: #FFFFFF;
+  }
+
+  .services .ico-circle{
+    width: 6rem;;
+    height: 6rem;
+    transition: background-color 1s ;
+    
+  }
+  .services .ico-circle:hover {
+      background-color: #0078FF;
+     border: 5px solid gainsboro  !important;
+     
+  }
+  .services .ico-circle:hover i{
+          color: #FFFFFF;
+
+  }
+ 
+
+
+
+
+
+  /* ==========Counter Section ====================== */
+.Counter{
+  background-image: url(../images/counters-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+.Counter .counter-overlay{
+  background-color: rgba(0, 0, 250, .5) ;
+}
+
+.Counter .counter-ico .ico-circle{
+  width: 6rem;;
+  height: 6rem;
+  border-color: #CDE1F8;
+  
+}
+
+
+    /* ==================Portofolio Section================= */
+    .portofolio .portofolio-title p::before{
+      content: "";
+      position: absolute;
+      width: 5%;
+      height: 4px;
+      background-color:var(--info-color) ;
+      left:50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    } 
+    .portofolio .card .card-title img{
+      transition: transform 1s;
+    }
+
+    .portofolio .card .card-title:hover img{
+       transform: scale(1.5,1.5);
+    }
+
+
+
+
+
+    /* ==========Slider Section======================= */
+
+    .slider{
+      background-image: url(../images/overlay-bg.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .slider .testmonial-overlay{
+      background-color: #0078ff;
+      opacity: .7;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    /* ===========================Blog Section==================== */
+    .Blog .Blog-title p::before{
+      content: "";
+      position: absolute;
+      width: 5%;
+      height: 4px;
+      background-color:var(--info-color) ;
+      left:50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    } 
+
+    .Blog .card .card-footer img{
+      width: 32px;
+    }
+    .Blog .card .card-body span,.Blog .card .card-footer span{
+      transition: color 1s;
+    }
+    .Blog .card .card-body h3:hover span{
+      color: var(--info-color);
+
+    }
+    .Blog .card .card-footer a:hover span{
+         color: var(--info-color);
+    }
+
+    .Blog .card .card-title .card-box{
+       bottom:-10px;
+       left: 50%;
+       transform: translateX(-50%);
+    }
+
+
+    /* ======================Contact Section================ */
+    .contact{
+      background-image: url(../images/overlay-bg.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .contact .contact-overlay{
+      background-color: #0078ff;
+      opacity: .7;
+      position:absolute ;
+      top: 0;
+      left: 0;
+     width: 100%;
+      height: 100%;
+    }
+   
+    .contact ul li{
+      list-style: none;
+    }
+    .contact ul li{
+      transition: background-color 1s;
+    }
+
+    .contact ul .ico-circle:hover{
+          background-color: #0078FF;
+          border: 5px solid gainsboro !important;
+          
+    }
+
+    .contact ul .ico-circle:hover i{
+      color: #FFFFFF  !important;
+    }
+    .contact ul .ico-circle{
+      width:3rem;
+      height: 3rem;
+    }
+
+    .contact h5::before{
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 4px;
+      background-color:var(--info-color) ;
+      left: 0;
+      bottom: -20px;
+  
+    } 
+
+
+    footer{
+      background-color: #0062D3;
+    }
