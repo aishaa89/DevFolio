@@ -353,7 +353,8 @@ header  p::after{
     .contact ul .ico-circle{
       width:3rem;
       height: 3rem;
-    }
+       
+       }
 
     .contact h5::before{
       content: "";
